@@ -16,7 +16,7 @@ const  Form = () => {
 			},
       body: JSON.stringify({ email,fName,lName, address })
     }
-  await  fetch("http://localhost:3000/",options).then(res=>res.json()).then(data=>console.log(data)).catch(err=>console.log(err))
+  await  fetch("https://gsbackend.vercel.app/",options).then(res=>res.json()).then(data=>console.log(data)).catch(err=>console.log(err))
 
   }
 
